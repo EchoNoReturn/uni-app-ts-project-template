@@ -7,23 +7,13 @@
 	</view>
 </template>
 
-<script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
+<script setup lang="ts">
+import { ref } from 'vue';
 
-		},
-		methods: {
-
-		}
-	}
+const title = ref('Hello');
 </script>
 
-<style>
+<style scoped>
 	.content {
 		display: flex;
 		flex-direction: column;
